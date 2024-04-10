@@ -48,7 +48,7 @@ Before continuing, make sure that these tasks are completed!
 - [ ] In `index.js`, the `express()` function is used to create an `app`
 - [ ] The `path` module is imported
 - [ ] The `__dirname` variable is used to generate an absolute path to the `dist/` folder of your React application
-- [ ] The `express.static()` middleware is used to server the static assets in the React application's `dist/` folder.
+- [ ] The `express.static()` middleware serves the static assets in the React application's `dist/` folder.
 - [ ] A middleware controller exists that prints the request method, url, and time of request for every request sent to the server, and then invokes the `next()` middleware in the chain.
 - [ ] The `app` listens on an available port (I recommend `8080`)
 
