@@ -33,7 +33,28 @@ This assignment has 12 tasks:
 - 6 server application tasks
 - 1 deployment task
 
-You got this!
+**Setup Technical Requirements**
+
+Before continuing, make sure that these tasks are completed!
+
+- [ ] Has a Vite+React project folder with a built `dist/` folder
+- [ ] The vite project `.gitignore` file does NOT include `dist`
+- [ ] Has a `server` folder with an `index.js` file and a `package.json` file inside
+- [ ] `package.json` has `express` installed as a dependency and `nodemon` as a dev dependency
+- [ ] `package.json` has a `"dev"` script that uses `nodemon` and a `"start"` script that uses `node`
+
+**Server Application Technical Requirements**
+
+- [ ] In `index.js`, the `express()` function is used to create an `app`
+- [ ] The `path` module is imported
+- [ ] The `__dirname` variable is used to generate an absolute path to the `dist/` folder of your React application
+- [ ] The `express.static()` middleware is used to server the static assets in the React application's `dist/` folder.
+- [ ] A middleware controller exists that prints the request method, url, and time of request for every request sent to the server, and then invokes the `next()` middleware in the chain.
+- [ ] The `app` listens on an available port (I recommend `8080`)
+
+**Deployment Technical Requirements**
+
+- [ ] Your GitHub page has a link to the deployed server in the About section. 
 
 ## Part 1 — Setup
 
@@ -64,16 +85,6 @@ While working on your server, use `npm run dev` to run the server and have it re
 
 When deploying, you will use the `npm start` command to start the server using the normal `node` command.
 
-**Setup Technical Requirements**
-
-Before continuing, make sure that these tasks are completed!
-
-- [ ] Has a Vite+React project folder with a built `dist/` folder
-- [ ] The `.gitignore` does NOT include `dist`
-- [ ] Has a `server` folder with an `index.js` file and a `package.json` file inside
-- [ ] `package.json` has `express` installed as a dependency and `nodemon` as a dev dependency
-- [ ] `package.json` has a `"dev"` script that uses `nodemon` and a `"start"` script that uses `node`
-
 ## Part 2 — Write the Middleware
 
 Now that you have a built React project in the `dist/` folder, we want to build a server that can serve those static assets.
@@ -84,24 +95,11 @@ When you visit the index of your server (http://localhost:8080, or whatever port
 
 Any time that you send a request to the server, the request method, url, and time of request should be printed in the server's terminal.
 
-**Server Application Technical Requirements**
-
-- [ ] In `index.js`, the `express()` function is used to create an `app`
-- [ ] The `path` module is imported
-- [ ] The `__dirname` variable is used to generate an absolute path to the `dist/` folder of your React application
-- [ ] The `express.static()` middleware is used to server the static assets in the React application's `dist/` folder.
-- [ ] A middleware controller exists that prints the request method, url, and time of request for every request sent to the server, and then invokes the `next()` middleware in the chain.
-- [ ] The `app` listens on an available port (I recommend `8080`)
-
 ## Part 3 — Deploy
 
 When you're done, push your code to github and [follow these steps to deploy using Render](https://github.com/The-Marcy-Lab-School/render-deployment-instructions). Then, add the deployed link to your GitHub About section. Click on the gear icon to set the Website url (see below)
 
 ![](./images/deployed-github.png)
-
-**Deployment Technical Requirements**
-
-- [ ] Your GitHub page has a link to the deployed server in the About section. 
 
 ## Bonus Challenge: 
 
